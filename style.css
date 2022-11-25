@@ -13,8 +13,8 @@
     --main-color: #ff702a;
     --text-color: #fff;
     --bg-color: #1e1c2a;
-    --big-font: 5rem;
-    --h2-font: 2.25rem;
+    --big-font: 3rem;
+    --h2-font: 1.5rem;
     --p-font: 0.9rem;
 
 }
@@ -72,15 +72,15 @@ section{
     align-items: center;
 }
 
-.home-img{
+.home-img img{
     max-width: 100%;
-    width: 300px;
+    width: 600px;
 }
 
 .home-text h1{
 
     color: var(--main-color);
-    font-size: 3rem;
+    font-size: var(--big-font);
 }
 
 .home-text{
@@ -102,4 +102,39 @@ section{
 .btn:hover{
     
     transform: scale(1.1) translateY(5px);
+}
+
+.about{
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    align-items: center;
+}
+
+.about-img img{
+    max-width: 100%;
+    width: 400px;
+}
+
+.about-text h5{
+    color: var(--main-color);
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.about-text h2{
+
+    font-size: 2.25rem;
+}
+
+.about-text{
+    margin: 1rem 0 2rem;
+    font-size: var(--p-font);
+}
+
+.about-text p{
+    margin: 20px 0;
 }
